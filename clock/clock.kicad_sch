@@ -1186,6 +1186,12 @@
 		(uuid "2ff9e2ba-ccae-4199-8a95-dfd93eb58c00")
 	)
 	(junction
+		(at 50.8 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57bf3a2f-4237-4d70-8b4f-dbccbe08b521")
+	)
+	(junction
 		(at 50.8 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1209,6 +1215,26 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 91.44) (xy 49.53 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1672212d-1cf4-4998-a307-bb3999b2ccaa")
+	)
+	(wire
+		(pts
+			(xy 50.8 83.82) (xy 50.8 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d92f977-fbcd-41ec-b8cb-071042cee22b")
+	)
+	(wire
+		(pts
 			(xy 50.8 90.17) (xy 50.8 95.25)
 		)
 		(stroke
@@ -1216,16 +1242,6 @@
 			(type default)
 		)
 		(uuid "59ce8204-f27c-496c-a759-46c62c3ceb1c")
-	)
-	(bus
-		(pts
-			(xy 62.23 66.04) (xy 62.23 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b59cdfb-43af-4ba1-9a0b-89b745262dd4")
 	)
 	(wire
 		(pts
@@ -1246,6 +1262,26 @@
 			(type default)
 		)
 		(uuid "74ec29ea-f01f-44dc-a211-2a864cb0f71c")
+	)
+	(wire
+		(pts
+			(xy 49.53 91.44) (xy 49.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7742ebec-51c3-4c96-b3fb-40b86363ebbd")
+	)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 62.23 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a964268f-4cb0-419c-b852-998b25acb8b9")
 	)
 	(wire
 		(pts
@@ -1309,23 +1345,33 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 90.17) (xy 50.8 90.17)
+			(xy 40.64 83.82) (xy 50.8 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e49847b0-9b44-42a7-b6c2-975c26644cfa")
+		(uuid "e665735a-b499-4f53-80d9-76a6b8495bce")
 	)
 	(wire
 		(pts
-			(xy 50.8 82.55) (xy 50.8 87.63)
+			(xy 50.8 82.55) (xy 50.8 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e6f9e571-9669-49f0-bf61-d417b63a4a77")
+	)
+	(wire
+		(pts
+			(xy 49.53 87.63) (xy 50.8 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff1058fb-ef83-4eec-ad7b-9d58bd00b966")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -1581,6 +1627,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 40.64 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b13825e-99f5-4302-81b1-e57b5a5240e9")
+		(property "Reference" "R2"
+			(at 43.18 86.3599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200k"
+			(at 43.18 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.862 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 40.64 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "14bc9e04-ee68-498f-b27d-577e7f17763e")
+		)
+		(pin "1"
+			(uuid "b06d1b8a-0bbd-413a-8401-410fc080e23d")
+		)
+		(instances
+			(project "clock"
+				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 62.23 62.23 0)
 		(unit 1)
@@ -1664,7 +1792,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 41.91 80.01 0)
+		(at 41.91 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1675,7 +1803,7 @@
 		(fields_autoplaced yes)
 		(uuid "609dfa57-b100-49bc-a7a9-d23e6eea0258")
 		(property "Reference" "#PWR08"
-			(at 41.91 83.82 0)
+			(at 45.72 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1686,13 +1814,14 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 41.91 74.93 0)
+			(at 38.1 80.0099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1735,6 +1864,88 @@
 			(project "clock"
 				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 50.8 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f878e20-e2e4-4c04-a9ef-6dca9a69a936")
+		(property "Reference" "C1"
+			(at 54.61 96.9009 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 54.61 99.4409 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 51.7652 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 50.8 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "91cddaa9-e653-4ed2-bf56-0b71f4740f86")
+		)
+		(pin "1"
+			(uuid "910d5153-8e28-4b10-ae2a-45a9e922a70c")
+		)
+		(instances
+			(project "clock"
+				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -1813,86 +2024,6 @@
 			(project "clock"
 				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 44.45 90.17 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8286700e-ef48-4384-b9e2-be70386ff1eb")
-		(property "Reference" "C3"
-			(at 45.339 82.55 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 45.339 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 91.1352 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 44.45 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "60ce2711-c687-4dc9-bbdb-43cc8c1e9020")
-		)
-		(pin "2"
-			(uuid "48d93e04-9b3e-43cf-95e8-3d69cb9b83dc")
-		)
-		(instances
-			(project "clock"
-				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -2209,167 +2340,6 @@
 			(project "clock"
 				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 50.8 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c63b353-b6c9-4cbe-9c66-050ac5cb7b7f")
-		(property "Reference" "C1"
-			(at 54.61 97.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 54.61 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 51.7652 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 50.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8dc324ae-b3da-40c8-bfe6-f6c5fbeede06")
-		)
-		(pin "2"
-			(uuid "72070861-f2f1-4f20-95d4-bf53d2a4f8f0")
-		)
-		(instances
-			(project "clock"
-				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 40.64 90.17 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b204012d-3267-4236-a551-3c2e379c01c1")
-		(property "Reference" "#PWR07"
-			(at 34.29 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 36.83 90.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a975a64d-2035-4556-862b-e1d68503948d")
-		)
-		(instances
-			(project "clock"
-				(path "/137f3242-c0bf-4918-9047-3db9a922cbee"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
